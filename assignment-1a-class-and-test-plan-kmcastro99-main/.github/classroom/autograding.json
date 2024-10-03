@@ -1,0 +1,24 @@
+{
+  "tests": [
+    {
+      "name": "Run Unit Tests",
+      "setup": "",
+      "run": "python3 run_tests.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    },
+    {
+      "name": "Test Python Style",
+      "setup": "sudo -H pip3 install pep8",
+      "run": "pep8 --show-source --statistics",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": null
+    }
+  ]
+}

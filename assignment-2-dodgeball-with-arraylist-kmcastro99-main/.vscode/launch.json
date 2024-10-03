@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "A2: DodgeballMain interactive",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/dodgeball_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "A2: DodgeballMain file input",
+            "type": "python",
+            "request": "launch",
+            "args": ["<", "input.txt"],
+            "program": "${workspaceRoot}/dodgeball_main.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

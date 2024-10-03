@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Dodgeball Main Unmodified",
+      "setup": "",
+      "run": "cksum dodgeball_main.py",
+      "input": "",
+      "output": "2448157611 3585 dodgeball_main.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test_Linked_List Unmodified",
+      "setup": "",
+      "run": "cksum test/list/test_linked_list.py",
+      "input": "",
+      "output": "3043097267 42913 test/list/test_linked_list.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Dodgeball Manager Tests Unmodified",
+      "setup": "",
+      "run": "cksum test/dodgeball_manager/*.py",
+      "input": "",
+      "output": "3751873891 1311 test/dodgeball_manager/__init__.py\r\n788470743 8366 test/dodgeball_manager/test_boolean_accessors.py\r\n1947633448 2028 test/dodgeball_manager/test_count_accessors.py\r\n2707807262 6731 test/dodgeball_manager/test_errors.py\r\n2391504746 8367 test/dodgeball_manager/test_main_logic.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Run All Unit Tests",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m unittest",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 20
+    }
+  ]
+}

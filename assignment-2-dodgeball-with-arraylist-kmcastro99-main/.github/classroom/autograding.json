@@ -1,0 +1,114 @@
+{
+  "tests": [
+    {
+      "name": "Main unmodified",
+      "setup": "",
+      "run": "cksum dodgeball_main.py",
+      "input": "",
+      "output": "1096213883 3580 dodgeball_main.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Array List tests unmodified",
+      "setup": "",
+      "run": "cksum test/list/test_array_list.py",
+      "input": "",
+      "output": "471064983 7566 test/list/test_array_list.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Boolean Accessors unmodified",
+      "setup": "",
+      "run": "cksum test/dodgeball_manager/test_boolean_accessors.py",
+      "input": "",
+      "output": "788470743 8366 test/dodgeball_manager/test_boolean_accessors.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Count Accessor Test unmodified",
+      "setup": "",
+      "run": "cksum test/dodgeball_manager/test_count_accessors.py",
+      "input": "",
+      "output": "1947633448 2028 test/dodgeball_manager/test_count_accessors.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Main logic Test unmodified",
+      "setup": "",
+      "run": "cksum test/dodgeball_manager/test_main_logic.py",
+      "input": "",
+      "output": "2391504746 8367 test/dodgeball_manager/test_main_logic.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Error Test Unmodified",
+      "setup": "",
+      "run": "cksum test/dodgeball_manager/test_errors.py",
+      "input": "",
+      "output": "2707807262 6731 test/dodgeball_manager/test_errors.py",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Run all unit tests",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "python -m unittest",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 42
+    },
+    {
+      "name": "Breaking Bad - Initial Throwers Print",
+      "setup": "",
+      "run": "python ./dodgeball_main.py",
+      "input": "Walter, Jesse, Saul\r\nHank, Skyler, Marie\r\nWalter\r\nHank\r\nh\r\nJesse\r\nSkyler\r\nc\r\nHank\r\nWalter\r\nSkyler\r\nc\r\nSaul\r\nSkyler\r\nh\r\nJesse\r\nHank\r\nh\r\nJesse\r\nMarie\r\nc\r\nSkyler\r\nWalter\r\nMarie\r\nh\r\nSaul\r\nSkyler\r\nd\r\nJesse\r\nSkyler\r\nh\r\n",
+      "output": "Throwers: Walter 0, Jesse 0, Saul 0",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "Breaking Bad - First Hit Score Modification",
+      "setup": "",
+      "run": "python ./dodgeball_main.py",
+      "input": "Walter, Jesse, Saul\r\nHank, Skyler, Marie\r\nWalter\r\nHank\r\nh\r\nJesse\r\nSkyler\r\nc\r\nHank\r\nWalter\r\nSkyler\r\nc\r\nSaul\r\nSkyler\r\nh\r\nJesse\r\nHank\r\nh\r\nJesse\r\nMarie\r\nc\r\nSkyler\r\nWalter\r\nMarie\r\nh\r\nSaul\r\nSkyler\r\nd\r\nJesse\r\nSkyler\r\nh\r\n",
+      "output": "Throwers: Walter 1, Jesse 0, Saul 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Breaking Bad - Initial Dodgers Print",
+      "setup": "",
+      "run": "python ./dodgeball_main.py",
+      "input": "Walter, Jesse, Saul\r\nHank, Skyler, Marie\r\nWalter\r\nHank\r\nh\r\nJesse\r\nSkyler\r\nc\r\nHank\r\nWalter\r\nSkyler\r\nc\r\nSaul\r\nSkyler\r\nh\r\nJesse\r\nHank\r\nh\r\nJesse\r\nMarie\r\nc\r\nSkyler\r\nWalter\r\nMarie\r\nh\r\nSaul\r\nSkyler\r\nd\r\nJesse\r\nSkyler\r\nh\r\n",
+      "output": "Dodgers: Hank 0, Skyler 0, Marie 0",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Breaking Bad - Sorted Score printing",
+      "setup": "",
+      "run": "python ./dodgeball_main.py",
+      "input": "Walter, Jesse, Saul\r\nHank, Skyler, Marie\r\nWalter\r\nHank\r\nh\r\nJesse\r\nSkyler\r\nc\r\nHank\r\nWalter\r\nSkyler\r\nc\r\nSaul\r\nSkyler\r\nh\r\nJesse\r\nHank\r\nh\r\nJesse\r\nMarie\r\nc\r\nSkyler\r\nWalter\r\nMarie\r\nh\r\nSaul\r\nSkyler\r\nd\r\nJesse\r\nSkyler\r\nh\r\n",
+      "output": ".*All scores, in order:\\nSkyler 3\\nWalter 2\\nJesse 2\\nSaul 1\\nMarie 1\\nHank 0.*",
+      "comparison": "regex",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
